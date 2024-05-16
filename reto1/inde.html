@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <script>
+
+        // Solicitar el nombre del usuario
+        document.body.innerHTML += '<h1>' + prompt('Por favor, ingrese su nombre:') + '</h1>';
+        
+        //otros ejemplos para solicitar el nombre 
+        document.getElementById('nombreUsuario').innerText = prompt("¿Cuál es tu nombre?");
+
+        document.querySelector('.nombreUsuario').innerText = prompt("¿Cuál es tu nombre?");
+
+        document.body.appendChild(document.createElement('h1')).innerText = prompt("¿Cuál es tu nombre?");
+
+        document.getElementById('contenedor').insertAdjacentHTML('beforeend', `<h1>${prompt("¿Cuál es tu nombre?")}</h1>`);
+
+        document.getElementById('nombreUsuario').innerHTML = prompt("¿Cuál es tu nombre?");
+
+        // Insertar un párrafo con el mensaje "mucho gusto!"
+        document.body.innerHTML += '<p>¡Mucho gusto!</p>';
+        
+        // Mostrar mensaje en la consola
+        console.log('Acabo de insertar tu nombre en un header');
+        
+        // Mostrar ventana de alerta al final del programa
+        alert('Programa terminado');
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
